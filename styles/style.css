@@ -42,3 +42,10 @@ img {
   display: block;
   margin: 0 auto;
 }
+body {
+  font-family: 'Saira', sans-serif;
+}
+
+h1 {
+  font-family: 'Quantico', sans-serif;
+}
