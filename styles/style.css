@@ -49,3 +49,23 @@ body {
 h1 {
   font-family: 'Quantico', sans-serif;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -1px; /* más estilo Blonde */
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p, li {
+  font-weight: 300;
+}
+
