@@ -74,23 +74,22 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: #222; /* Fondo oscuro para que resalten */
+  background-color: #222; 
   overflow: hidden;
 }
 
-/* Estilo base de la partícula */
 .particula {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #ffd700;
   position: absolute;
-  bottom: -10px; /* empieza fuera de la pantalla */
+  bottom: -10px; 
   animation: subir linear infinite;
   opacity: 0.8;
 }
 
-/* Animación de subida */
+
 @keyframes subir {
   0% { transform: translateY(0) scale(1); opacity: 1; }
   100% { transform: translateY(-120vh) scale(0.5); opacity: 0; }
@@ -99,7 +98,7 @@ body {
 </head>
 <body>
 
-<!-- Creamos múltiples partículas -->
+
 <div class="particula" style="left: 10%; animation-duration: 4s; width:10px; height:10px;"></div>
 <div class="particula" style="left: 20%; animation-duration: 6s; width:6px; height:6px;"></div>
 <div class="particula" style="left: 30%; animation-duration: 5s; width:12px; height:12px;"></div>
