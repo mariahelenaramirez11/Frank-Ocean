@@ -1,137 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Frank Ocean</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <title>Frank Ocean</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
 
+  
   <style>
-    /* Body centrado y fondo */
-    body {
-      margin: 0;
-      height: 100vh;
-      background-color: #222;
-      font-family: 'Montserrat', sans-serif;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      overflow: hidden;
-      position: relative;
-    }
+.movimiento-horizontal {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
 
-    /* Contenedor principal */
-    .contenido {
-      z-index: 1; /* siempre por encima de las partículas */
-      max-width: 600px;
-    }
+.movimiento-horizontal p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: deslizar 10s linear infinite;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    /* Partículas */
-    .particula {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #ffd700;
-      position: absolute;
-      bottom: -10px;
-      animation: subir linear infinite;
-      opacity: 0.8;
-    }
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
 
-    @keyframes subir {
-      0% { transform: translateY(0) scale(1); opacity: 1; }
-      100% { transform: translateY(-120vh) scale(0.5); opacity: 0; }
-    }
+<div class="movimiento-horizontal">
+  <p>shut the fuck up i don't want your conversation</p>
+</div>
 
-    /* Botón animado */
-    .boton-animado {
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #f8f9fa;
-      color: black;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      animation: pulso 1.5s infinite;
-      margin: 20px 0;
-    }
+  
+  <body>
+    <h1>Frank Ocean</h1>
+    <img src="https://wallpapers.com/images/hd/frank-ocean-blond-music-rjr51ik7cbd17sgb.jpg" alt="Un gato glitcheado." width="550" height="500"
+    
+<button class="boton-animado"></button>
 
-    @keyframes pulso {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
-    }
+<style>
+.boton-animado {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #f8f9fa;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: pulso 1.5s infinite;
+}
 
-    /* Imagen centrada */
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 20px 0;
-    }
+@keyframes pulso {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+</style>
 
-    /* Texto en movimiento */
-    .movimiento-horizontal {
-      overflow: hidden;
-      white-space: nowrap;
-      box-sizing: border-box;
-      margin: 20px 0;
-    }
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Partículas flotantes</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #222; /* Fondo oscuro para que resalten */
+  overflow: hidden;
+}
 
-    .movimiento-horizontal p {
-      display: inline-block;
-      padding-left: 100%;
-      animation: deslizar 10s linear infinite;
-      font-size: 20px;
-      font-weight: bold;
-      color: #ffdd00;
-    }
+/* Estilo base de la partícula */
+.particula {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffd700;
+  position: absolute;
+  bottom: -10px; /* empieza fuera de la pantalla */
+  animation: subir linear infinite;
+  opacity: 0.8;
+}
 
-    @keyframes deslizar {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-
-    /* Lista */
-    ul {
-      text-align: left;
-      margin: 10px auto;
-      padding: 0 20px;
-    }
-
-  </style>
+/* Animación de subida */
+@keyframes subir {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-120vh) scale(0.5); opacity: 0; }
+}
+</style>
 </head>
-
 <body>
 
-  <!-- Partículas -->
-  <div class="particula" style="left: 10%; animation-duration: 4s;"></div>
-  <div class="particula" style="left: 20%; animation-duration: 6s;"></div>
-  <div class="particula" style="left: 30%; animation-duration: 5s;"></div>
-  <div class="particula" style="left: 40%; animation-duration: 7s;"></div>
-  <div class="particula" style="left: 50%; animation-duration: 4.5s;"></div>
-  <div class="particula" style="left: 60%; animation-duration: 6.5s;"></div>
-  <div class="particula" style="left: 70%; animation-duration: 5.5s;"></div>
-  <div class="particula" style="left: 80%; animation-duration: 7.5s;"></div>
-  <div class="particula" style="left: 90%; animation-duration: 6s;"></div>
+<!-- Creamos múltiples partículas -->
+<div class="particula" style="left: 10%; animation-duration: 4s; width:10px; height:10px;"></div>
+<div class="particula" style="left: 20%; animation-duration: 6s; width:6px; height:6px;"></div>
+<div class="particula" style="left: 30%; animation-duration: 5s; width:12px; height:12px;"></div>
+<div class="particula" style="left: 40%; animation-duration: 7s; width:8px; height:8px;"></div>
+<div class="particula" style="left: 50%; animation-duration: 4.5s; width:10px; height:10px;"></div>
+<div class="particula" style="left: 60%; animation-duration: 6.5s; width:9px; height:9px;"></div>
+<div class="particula" style="left: 70%; animation-duration: 5.5s; width:11px; height:11px;"></div>
+<div class="particula" style="left: 80%; animation-duration: 7.5s; width:7px; height:7px;"></div>
+<div class="particula" style="left: 90%; animation-duration: 6s; width:8px; height:8px;"></div>
 
-  <!-- Contenido centrado -->
-  <div class="contenido">
-    <h1>Frank Ocean</h1>
+</body>
+</html>
 
-    <img src="https://wallpapers.com/images/hd/frank-ocean-blond-music-rjr51ik7cbd17sgb.jpg" alt="Frank Ocean" width="550" height="500">
 
-    <button class="boton-animado">Click aquí</button>
 
-    <div class="movimiento-horizontal">
-      <p>shut the fuck up i don't want your conversation</p>
-    </div>
-
-    <p>Frank Ocean es considerado uno de los artistas más influyentes de la música contemporánea, especialmente en R&B y música alternativa. Su importancia radica en su capacidad para combinar letras introspectivas y emotivas con innovaciones musicales, rompiendo los límites del género y explorando temas de identidad, amor, sexualidad y sociedad. Álbumes como Channel Orange y Blonde han sido aclamados por su originalidad, narrativa poética y producción experimental, consolidando a Ocean como un referente creativo y cultural para toda una generación. Ha colaborado con artistas de talla mundial, tales como Kanye West, Tyler the Creator, Rosalía, Asap Rocky y Calvin Harris.</p>
-
-    <p>Unas de sus mejores canciones (aunque sus álbumes no tienen skips)</p>
+ <p>Frank Ocean es considerado uno de los artistas más influyentes de la música contemporánea, especialmente en R&B y música alternativa. Su importancia radica en su capacidad para combinar letras introspectivas y emotivas con innovaciones musicales, rompiendo los límites del género y explorando temas de identidad, amor, sexualidad y sociedad. Álbumes como Channel Orange y Blonde han sido aclamados por su originalidad, narrativa poética y producción experimental, consolidando a Ocean como un referente creativo y cultural para toda una generación. Ha colaborado con artistas de talla mundial, tales como Kanye West, Tyler the Creator, Rosalía, Asap Rocky y Calvin Harris.</p>
+    
+ <p>Unas de sus mejores canciones (aunque sus álbumes no tienen skips)</p>
 
     <ul>
       <li>Seigfried</li>
@@ -141,7 +127,5 @@
       <li>Self control</li>
     </ul>
 
-  </div>
-
-</body>
+  </body>
 </html>
