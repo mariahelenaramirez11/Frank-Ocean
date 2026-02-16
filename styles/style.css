@@ -19,7 +19,9 @@ p, li {
   letter-spacing: 1px;
 }
 
-
+body {
+  background-color: #FF4500;
+}
 
 body {
   width: 600px;
