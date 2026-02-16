@@ -68,4 +68,6 @@ h2 {
 p, li {
   font-weight: 300;
 }
-
+body {
+  background-color: #FF4500;
+}
