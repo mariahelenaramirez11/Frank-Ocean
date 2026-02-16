@@ -8,7 +8,7 @@ body {
   margin: 0;
   height: 100vh;
   background: linear-gradient(270deg, orange, green, gray, pink);
-  background-size: 800% 800%;
+
   animation: fondoAnimado 5s linear infinite;
     font-family: 'Montserrat', sans-serif;
   color: #111;}
