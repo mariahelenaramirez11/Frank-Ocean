@@ -33,9 +33,7 @@ p, li {
   letter-spacing: 1px;
 }
 
-body {
-  background-color: #FF4500;
-}
+
 
 body {
   width: 600px;
@@ -81,7 +79,4 @@ h2 {
 
 p, li {
   font-weight: 300;
-}
-  body {
-  background-color: #f2f2f2; /* gris claro */
 }
