@@ -8,6 +8,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
+
+  <style>
+.movimiento-horizontal {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.movimiento-horizontal p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: deslizar 10s linear infinite;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
+<div class="movimiento-horizontal">
+  <p>shut the fuck up i don't want your conversation</p>
+</div>
+
+  
   <body>
     <h1>Frank Ocean</h1>
     <img src="https://wallpapers.com/images/hd/frank-ocean-blond-music-rjr51ik7cbd17sgb.jpg" alt="Un gato glitcheado." width="500" height="500"
